@@ -8,6 +8,8 @@ openai.api = "TEST123123"
 def main():
     article_text = load_article("Zadanie dla JJunior AI Developera - tresc artykulu.txt")
     html_content = generate_html_content(article_text)
+    save_html_content(html_content, "Zadanie dla JJunior AI Developera - wygenerowany HTML.html")
+    print("HTML został wygenerowany i zapisany do pliku.")
 
 
 # Define function to load article from file
