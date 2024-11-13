@@ -37,7 +37,7 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
 4. **Uruchomienie**: Uruchom skrypt za pomocą poniższego polecenia:
 
    ```bash
-   python3 article_to_html.py
+   python3 main.py
    ```
 
 ## Użycie
@@ -46,7 +46,7 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
 2. Uruchom skrypt:
 
    ```bash
-   python3 article_to_html.py
+   python3 main.py
    ```
 
 3. Skrypt:
@@ -82,7 +82,7 @@ Zapisuje wygenerowany kod HTML do wskazanego pliku.
 Aby uruchomić skrypt, wykonaj go z poziomu wiersza poleceń:
 
 ```bash
-python3 article_to_html.py
+python3 main.py
 ```
 
 Upewnij się, że plik artykułu (tekst.txt) znajduje się w tym samym katalogu lub podaj pełną ścieżkę do niego w kodzie.
