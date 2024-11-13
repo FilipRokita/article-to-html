@@ -5,9 +5,16 @@ import os
 
 # Define main function, on top for better readability
 def main():
+    # Configure program
     configure()
+
+    # Load article from file
     article_text = load_article('Zadanie dla JJunior AI Developera - tresc artykulu.txt')
+
+    # Generate HTML content from article text using OpenAI
     html_content = generate_html_content(article_text)
+
+    # Save HTML content to file and print message
     save_html_content(html_content, 'artykul.html')
     print('HTML został wygenerowany i zapisany do pliku.')
 
