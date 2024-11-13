@@ -1,9 +1,13 @@
-import openai
 from dotenv import load_dotenv
+from openai import OpenAI
 import os
 
 # Set API key
-openai.api_key = os.getenv('OPENAI_API_KEY')
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.getenv('OPENAI_API_KEY')
+    )
 
 
 # Define main function, on top for better readability
@@ -33,15 +37,18 @@ def generate_html_content(article_text):
     '''
 
     # Generate HTML content using OpenAI
-    response = openai.Completion.create(
-        engine='text-davinci-003',
-        prompt=prompt,
-        max_tokens=2000,
-        temperature=0.7
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
     )
 
     # Return generated HTML content
-    return response.choices[0].text.strip()
+    return response.model_dump()['choices'][0]['message']['content']
 
 
 # Define function to save HTML content to file
