@@ -14,6 +14,7 @@ def load_article(filename):
     with open(filename, 'r') as file:
         return file.read()
 
+
 # Define function to generate HTML content from article text using OpenAI
 def generate_html_content(article_text):
     prompt = f"""
