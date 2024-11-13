@@ -1,3 +1,8 @@
+# Filip Rokita
+# www.filiprokita.com
+
+
+# Import necessary modules
 from dotenv import load_dotenv
 from openai import OpenAI
 import os
@@ -21,8 +26,10 @@ def main():
 
 # Define function to configure program
 def configure():
+    # Load API key from .env file
     load_dotenv()
 
+    # Create global OpenAI client variable and load API key
     global client
     client = OpenAI(
         api_key=os.getenv('OPENAI_API_KEY')
