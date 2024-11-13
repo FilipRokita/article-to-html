@@ -36,6 +36,9 @@ def generate_html_content(article_text):
         temperature=0.7
     )
 
+    # Return generated HTML content
+    return response.choices[0].text.strip()
+
 
 # Start the program if this script is run directly
 if __name__ == "__main__":
