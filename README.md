@@ -22,7 +22,7 @@ Interfejs użytkownika jest po polsku, co ułatwia obsługę, a reszta kodu jest
 
 1. Sklonuj lub pobierz repozytorium na swoją maszynę.
 
-2. Zainstaluj wymagane pakiety Python za pomocą pip:
+2. Zainstaluj wymagane biblioteki Python za pomocą pip:
 
    ```bash
    pip3 install -r requirements.txt
