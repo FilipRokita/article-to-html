@@ -50,6 +50,7 @@ def generate_html_content(article_text):
     1. Użyj odpowiednich tagów HTML do strukturyzacji treści, takich jak <h1>, <h2>, <h3> dla nagłówków oraz <p> dla paragrafów. W razie potrzeby możesz użyć list i innych standardowych tagów HTML, aby czytelnie przedstawić informacje.
     2. W miejscach, gdzie warto wstawić grafikę, dodaj tag <img src="image_placeholder.jpg">. Każdy tag <img> musi mieć atrybut alt z dokładnym opisem grafiki. Atrybut alt powinien zawierać precyzyjny prompt, który można użyć do wygenerowania odpowiedniej grafiki. Pod każdą grafiką umieść podpis, stosując odpowiedni tag HTML, aby wskazać jej temat.
     3. Kod HTML nie powinien zawierać CSS ani JavaScript. Wygenerowany HTML powinien zawierać wyłącznie kod przeznaczony do wstawienia pomiędzy tagi <body> i </body>. Nie dodawaj tagów <html>, <head>, ani <body>.
+    4. Nie używaj żadnych znaków Markdown (np. backticków) ani innych formatów tekstowych. Treść ma być czystym kodem HTML.
     Oto treść artykułu:
     {article_text}
     '''
