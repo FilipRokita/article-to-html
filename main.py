@@ -4,10 +4,10 @@ import openai
 openai.api = "TEST123123"
 
 
-# Define main function, on top for readability
+# Define main function, on top for better readability
 def main():
     article_text = load_article("Zadanie dla JJunior AI Developera - tresc artykulu.txt")
-    html_content = "Lorem Ipsum" # TODO: Generate HTML content from article
+    html_content = generate_html_content(article_text)
 
 
 # Define function to load article from file
