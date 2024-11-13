@@ -2,20 +2,24 @@ from dotenv import load_dotenv
 from openai import OpenAI
 import os
 
-# Set API key
-load_dotenv()
-
-client = OpenAI(
-    api_key=os.getenv('OPENAI_API_KEY')
-    )
-
 
 # Define main function, on top for better readability
 def main():
+    configure()
     article_text = load_article('Zadanie dla JJunior AI Developera - tresc artykulu.txt')
     html_content = generate_html_content(article_text)
     save_html_content(html_content, 'artykul.html')
     print('HTML został wygenerowany i zapisany do pliku.')
+
+
+# Define function to configure program
+def configure():
+    load_dotenv()
+
+    global client
+    client = OpenAI(
+        api_key=os.getenv('OPENAI_API_KEY')
+        )
 
 
 # Define function to load article from file
