@@ -71,7 +71,6 @@ def generate_html_content(article_text):
     )
 
     # Return generated HTML content
-    # return response.model_dump()['choices'][0]['message']['content']
     return response.choices[0].message.content
 
 
