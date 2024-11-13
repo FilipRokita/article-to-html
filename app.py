@@ -5,7 +5,7 @@ openai.api = "TEST123123"
 
 # Define main function, on top for readability
 def main():
-    article_text = "Lorem Ipsum" # TODO: Load article from file
+    article_text = load_article("Zadanie dla JJunior AI Developera - tresc artykulu.txt")
     html_content = "Lorem Ipsum" # TODO: Generate HTML content from article
 
 
@@ -14,6 +14,16 @@ def load_article(filename):
     with open(filename, 'r') as file:
         return file.read()
 
+# Define function to generate HTML content from article text using OpenAI
+def generate_html_content(article_text):
+    prompt = f"""
+    Jesteś ekspertem od tworzenia stron internetowych. Przygotuj HTML dla poniższego artykułu, stosując odpowiednie tagi HTML. 
+    1. Struktura tekstu powinna obejmować nagłówki, paragrafy oraz miejsca na obrazy.
+    2. Użyj tagów <img src="image_placeholder.jpg"> z atrybutem alt, gdzie to konieczne, wraz z podpisami pod grafikami.
+    3. Tylko zawartość między <body> i </body>, bez tagów <html>, <head> i <body>.
+    Oto artykuł:
+    {article_text}
+    """
 
 # Start the program if this script is run directly
 if __name__ == "__main__":
