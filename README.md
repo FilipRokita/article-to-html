@@ -15,7 +15,7 @@ Interfejs użytkownika jest po polsku, co ułatwia obsługę, a reszta kodu jest
 
 - Python 3.x+
 - Klucz API OpenAI (wymaga konta OpenAI)
-- Plik .env zawierający klucz API OpenAI.
+- Plik `.env` zawierający klucz API OpenAI.
 - Zainstalowane biblioteki `openai` i `python-dotenv`.
 
 ## Instalacja
