@@ -1,4 +1,4 @@
-# Generator Artykułu do HTML - Zadanie Rekrutacyjne Oxido
+# Konwerter artykułów do HTML
 
 Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowanego dokumentu HTML, wykorzystując model GPT-4o od OpenAI. Skrypt generuje kod HTML na podstawie dostarczonego tekstu artykułu i zapisuje go do pliku.
 
