@@ -26,7 +26,7 @@ def main():
 
 # Define function to configure program
 def configure():
-    # Load API key from .env file
+    # Load environment variables from .env file
     load_dotenv()
 
     # Create global OpenAI client variable and load API key
