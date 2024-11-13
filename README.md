@@ -36,12 +36,6 @@ Interfejs użytkownika jest po polsku, co ułatwia obsługę, a reszta kodu jest
 
    Zamień `twój_klucz_api_openai` na swój rzeczywisty klucz API OpenAI.
 
-4. Uruchom skrypt za pomocą poniższego polecenia:
-
-   ```bash
-   python3 main.py
-   ```
-
 ## Użycie
 
 1. Umieść artykuł, który chcesz skonwertować do HTML, w pliku tekstowym `artykul_tekst.txt`
@@ -51,7 +45,7 @@ Interfejs użytkownika jest po polsku, co ułatwia obsługę, a reszta kodu jest
    python3 main.py
    ```
 
-3. Skryp wykona następujące czynności:
+3. Skrypt wykona następujące czynności:
    - Wczyta artykuł z podanego pliku.
    - Wygeneruje kod HTML przy pomocy OpenAI.
    - Zapisze wygenerowany kod HTML do pliku `artykul.html`.
