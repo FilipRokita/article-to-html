@@ -14,7 +14,7 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
 - Python 3.x+
 - Klucz API OpenAI (wymaga konta OpenAI)
 - Plik .env zawierający klucz API OpenAI.
-- Biblioteka python-dotenv do ładowania zmiennych środowiskowych.
+- Zainstalowane biblioteki `openai` i `python-dotenv`.
 
 ## Instalacja
 
@@ -26,7 +26,7 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
    pip3 install -r requirements.txt
    ```
 
-3. Stwórz plik .env w tym samym katalogu co skrypt, o następującej zawartości:
+3. Stwórz plik `.env` w tym samym katalogu co skrypt, o następującej zawartości:
 
    ```
    OPENAI_API_KEY=twój_klucz_api_openai
@@ -34,7 +34,7 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
 
    Zamień `twój_klucz_api_openai` na swój rzeczywisty klucz API OpenAI.
 
-4. **Uruchomienie**: Uruchom skrypt za pomocą poniższego polecenia:
+4. Uruchom skrypt za pomocą poniższego polecenia:
 
    ```bash
    python3 main.py
@@ -49,35 +49,35 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
    python3 main.py
    ```
 
-3. Skrypt:
-   - Ładuje artykuł z podanego pliku.
-   - Generuje kod HTML przy pomocy OpenAI.
-   - Zapisuje wygenerowany HTML do pliku `artykul.html`.
-   - Wyświetla komunikat o pomyślnym wygenerowaniu i zapisaniu HTML.
+3. Skryp wykona następujące czynności:
+   - Załaduje artykuł z podanego pliku.
+   - Wygeneruje kod HTML przy pomocy OpenAI.
+   - Zapisze wygenerowany HTML do pliku `artykul.html`.
+   - Wyświetli komunikat o pomyślnym wygenerowaniu i zapisaniu HTML.
 
 ## Przegląd kodu
 
-### main()
+`main()`
 
 Główna funkcja, która konfiguruje program, ładuje artykuł, generuje HTML i zapisuje go do pliku.
 
-### configure()
+`configure()`
 
 Konfiguruje klienta OpenAI, ładując klucz API z pliku .env za pomocą biblioteki `python-dotenv`.
 
-### load_article(filename)
+`load_article(filename)`
 
 Ładuje artykuł z podanego pliku.
 
-### generate_html_content(article_text)
+`generate_html_content(article_text)`
 
 Generuje HTML z artykułu, korzystając z modelu GPT-4o. HTML jest strukturalnie organizowany według wytycznych.
 
-### save_html_content(html_content, filename)
+`save_html_content(html_content, filename)`
 
 Zapisuje wygenerowany kod HTML do wskazanego pliku.
 
-### Uruchamianie skryptu
+`Uruchamianie skryptu`
 
 Aby uruchomić skrypt, wykonaj go z poziomu wiersza poleceń:
 
