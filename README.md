@@ -42,7 +42,7 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
 
 ## Użycie
 
-1. Umieść artykuł, który chcesz skonwertować do HTML, w pliku tekstowym `tekst.txt`
+1. Umieść artykuł, który chcesz skonwertować do HTML, w pliku tekstowym `artykul_tekst.txt`
 2. Uruchom skrypt:
 
    ```bash
@@ -85,7 +85,7 @@ Aby uruchomić skrypt, wykonaj go z poziomu wiersza poleceń:
 python3 main.py
 ```
 
-Upewnij się, że plik artykułu (tekst.txt) znajduje się w tym samym katalogu lub podaj pełną ścieżkę do niego w kodzie.
+Upewnij się, że plik artykułu (artykul_tekst.txt) znajduje się w tym samym katalogu lub podaj pełną ścieżkę do niego w kodzie.
 
 ## Autor
 Filip Rokita  

@@ -14,7 +14,7 @@ def main():
     configure()
 
     # Load article from file
-    article_text = load_article('Zadanie dla JJunior AI Developera - tresc artykulu.txt')
+    article_text = load_article('artykul_tekst.txt')
 
     # Generate HTML content from article text using OpenAI
     html_content = generate_html_content(article_text)
