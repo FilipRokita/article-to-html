@@ -40,6 +40,12 @@ def generate_html_content(article_text):
     return response.choices[0].text.strip()
 
 
+# Define function to save HTML content to file
+def save_html_content(html_content, filename):
+    with open(filename, 'w') as file:
+        file.write(html_content)
+
+
 # Start the program if this script is run directly
 if __name__ == "__main__":
     main()
