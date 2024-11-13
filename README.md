@@ -57,19 +57,19 @@ Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowa
 
 ## Przegląd kodu
 
-`main()`
+`main()`  
 Główna funkcja, która konfiguruje program, ładuje artykuł, generuje HTML i zapisuje go do pliku.
 
-`configure()`
+`configure()`  
 Konfiguruje klienta OpenAI, ładując klucz API z pliku .env za pomocą biblioteki `python-dotenv`.
 
-`load_article(filename)`
+`load_article(filename)`  
 Ładuje artykuł z podanego pliku.
 
-`generate_html_content(article_text)`
+`generate_html_content(article_text)`  
 Generuje HTML z artykułu, korzystając z modelu GPT-4o. HTML jest strukturalnie organizowany według wytycznych.
 
-`save_html_content(html_content, filename)`
+`save_html_content(html_content, filename)`  
 Zapisuje wygenerowany kod HTML do wskazanego pliku.
 
 ## Autor
