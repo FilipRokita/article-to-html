@@ -1,7 +1,7 @@
 import openai
 
 # Set API key
-openai.api = "TEST123123"
+openai.api_key = "TEST123123"
 
 
 # Define main function, on top for better readability
