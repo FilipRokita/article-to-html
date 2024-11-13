@@ -14,7 +14,7 @@ def main():
 
 # Define function to load article from file
 def load_article(filename):
-    with open(filename, 'r', endcoding='utf-8') as file:
+    with open(filename, 'r', encoding='utf-8') as file:
         return file.read()
 
 
