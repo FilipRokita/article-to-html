@@ -2,6 +2,8 @@
 
 Ten skrypt w Pythonie umożliwia konwersję artykułu tekstowego do uporządkowanego dokumentu HTML, wykorzystując model GPT-4o od OpenAI. Skrypt generuje kod HTML na podstawie dostarczonego tekstu artykułu i zapisuje go do pliku.
 
+Interfejs użytkownika jest po polsku, co ułatwia obsługę, a reszta kodu jest w języku angielskim, co zapewnia lepszą kompatybilność z narzędziami i bibliotekami oraz ułatwia rozwój i wsparcie globalne.
+
 ## Funkcje
 
 - Wczytywanie tekstu artykułu z pliku
