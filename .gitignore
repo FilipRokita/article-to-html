@@ -1,2 +1,3 @@
-# Ignore file with enviromental variables
+# Ignore file with enviromental variables and .DS_Store file
 .env
+.DS_Store
