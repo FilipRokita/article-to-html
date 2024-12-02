@@ -14,14 +14,14 @@ def main():
     configure()
 
     # Load article from file
-    article_text = load_article('artykul_tekst.txt')
+    article_text = load_article('article_text.txt')
 
     # Generate HTML content from article text using OpenAI
     html_content = generate_html_content(article_text)
 
     # Save HTML content to file and print message
-    save_html_content(html_content, 'artykul.html')
-    print('HTML został wygenerowany i zapisany do pliku.')
+    save_html_content(html_content, 'article.html')
+    print('HTML has been generated and saved to the file.')
 
 
 # Define function to configure program
@@ -46,12 +46,12 @@ def load_article(filename):
 def generate_html_content(article_text):
     # Define prompt for OpenAI
     prompt = f'''
-    Chcę, abyś wygenerował strukturalny HTML dla poniższego artykułu, stosując się do następujących wytycznych:
-    1. Użyj odpowiednich tagów HTML do strukturyzacji treści, takich jak <h1>, <h2>, <h3> dla nagłówków oraz <p> dla paragrafów. W razie potrzeby możesz użyć list i innych standardowych tagów HTML, aby czytelnie przedstawić informacje.
-    2. W miejscach, gdzie warto wstawić grafikę, dodaj tag <img src="image_placeholder.jpg">. Każdy tag <img> musi mieć atrybut alt z dokładnym opisem grafiki. Atrybut alt powinien zawierać precyzyjny prompt, który można użyć do wygenerowania odpowiedniej grafiki. Pod każdą grafiką umieść podpis, stosując odpowiedni tag HTML, aby wskazać jej temat.
-    3. Kod HTML nie powinien zawierać CSS ani JavaScript. Wygenerowany HTML powinien zawierać wyłącznie kod przeznaczony do wstawienia pomiędzy tagi <body> i </body>. Nie dodawaj tagów <html>, <head>, ani <body>.
-    4. Nie używaj żadnych znaków Markdown (np. backticków) ani innych formatów tekstowych. Treść ma być czystym kodem HTML.
-    Oto treść artykułu:
+    I want you to generate structured HTML for the following article, adhering to these guidelines:
+    1. Use appropriate HTML tags to structure the content, such as <h1>, <h2>, <h3> for headings and <p> for paragraphs. If needed, use lists and other standard HTML tags to present the information clearly.
+    2. Where appropriate, include <img src="image_placeholder.jpg"> tags for images. Each <img> tag must have an alt attribute with an exact description of the image. The alt attribute should contain a precise prompt that can be used to generate the relevant image. Add a caption below each image using appropriate HTML tags to indicate its subject.
+    3. The HTML code should not include CSS or JavaScript. The generated HTML should only contain code intended to go between the <body> and </body> tags. Do not include <html>, <head>, or <body> tags.
+    4. Do not use Markdown characters (e.g., backticks) or other text formatting. The content should be pure HTML code.
+    Here is the content of the article:
     {article_text}
     '''
 
@@ -61,7 +61,7 @@ def generate_html_content(article_text):
         messages=[
             {
                 "role": "system",
-                "content": "Jesteś ekspertem w tworzeniu stron internetowych i generowaniu kodu HTML."
+                "content": "You are an expert in web development and HTML code generation."
             },
             {
                 "role": "user",
